@@ -10,7 +10,7 @@ const Guide = () => {
         <h1 className="text-5xl font-bold text-[#2d3436] tracking-tight">
           Guide
         </h1>
-      </main>
+      </main> 
     </div>
   );
 };

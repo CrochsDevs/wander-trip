@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../assets/logo/logo.png";
-import { ChevronDown, Globe, Wallet, ShieldCheck, Briefcase } from "lucide-react";
+import logo from "../../src/assets/logo/logo.png";
+import {
+    ChevronDown,
+    Globe, Wallet,
+    ShieldCheck,
+    Briefcase
+} from "lucide-react";
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -12,7 +17,6 @@ import {
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
-    // List of common traveler languages
     const languages = [
         { name: "English", code: "EN" },
         { name: "Tagalog", code: "TL" },
@@ -62,7 +66,7 @@ const Navbar = () => {
         >
             <nav className="max-w-[1200px] w-full mx-auto px-5 flex justify-between items-center h-full">
 
-                {/* Logo Section */}
+
                 <div className="flex items-center w-[150px] h-full">
                     <Link to="/home" className="flex items-center no-underline">
                         <img
@@ -123,7 +127,7 @@ const Navbar = () => {
                         </Link>
                     </li>
 
-                    {/* Language Switcher - Compact & Scrollable */}
+
                     <li>
                         <DropdownMenu modal={false}>
                             <DropdownMenuTrigger className="inline-flex items-center justify-center gap-2 min-w-[90px] px-3 py-2 font-semibold text-sm rounded-lg transition-colors text-[#2d3436] hover:text-[#ffcc00] outline-none focus:ring-0 group">
